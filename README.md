@@ -252,7 +252,7 @@ Add your own threat intel to `config/ioc_local.csv`:
 # type,value,source,confidence
 IP,198.51.100.1,my-threat-feed,90
 DOMAIN,c2.malware-example.com,my-threat-feed,85
-HASH,44d88612fea8a8f36de82e1278abb02f,virustotal,75
+HASH,44d886121541551531e82e1278abb02f,virustotal,75
 PATH,/tmp/implant,internal,95
 BEHAVIOR,process_injection,internal,80
 ```
