@@ -1,0 +1,14 @@
+# SentinelCore — Local IOC Seed List
+# Format: type,value,source,confidence
+# Extend this file with real threat intel IPs, domains, and hashes.
+# Lines starting with # are comments and are ignored.
+#
+type,value,source,confidence
+IP,198.51.100.1,abuse-ipdb-example,80
+IP,203.0.113.42,abuse-ipdb-example,75
+DOMAIN,malware-c2.example.net,internal,90
+DOMAIN,phishing-kit.example.com,internal,85
+HASH,44d88612fea8a8f36de82e1278abb02f,virustotal,70
+PATH,/tmp/implant,internal,95
+PATH,C:\Users\Public\payload.exe,internal,95
+BEHAVIOR,process_injection,internal,80
