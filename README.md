@@ -44,29 +44,29 @@ python main.py
 SentinelCore follows a strict **4-layer model** with enforced separation of concerns:
 
 ```
-┌─────────────────────────────────────────────────┐
+┌──────────────────────────────────────────────────┐
 │              PRESENTATION LAYER                  │
 │   SecurityDashboard (Analyst) · ExecutiveDash    │
 │              views/dashboards.py                 │
-├─────────────────────────────────────────────────┤
+├──────────────────────────────────────────────────┤
 │               BUSINESS LAYER                     │
 │  SecurityAnalyzer · RiskEngine · CorrelationEng  │
 │  AlertService · RecommendationEngine             │
 │              services/                           │
-├─────────────────────────────────────────────────┤
+├──────────────────────────────────────────────────┤
 │                DOMAIN LAYER                      │
 │  Process · NetworkConnection · FileActivity      │
 │  SecurityEvent · ThreatIndicator · RiskAssessment│
 │  CorrelationCase · Alert · HistoricalRiskProfile │
 │  ScenarioAnalysis · AuditEntry · Recommendation  │
 │              domain/models.py                    │
-├─────────────────────────────────────────────────┤
+├──────────────────────────────────────────────────┤
 │                  DATA LAYER                      │
 │  ProcessCollector · NetworkCollector             │
 │  FileWatcher · ThreatIntelAdapter                │
 │  SQLite Repositories (EventRepo, AlertRepo …)    │
 │              collectors/  ·  storage/            │
-└─────────────────────────────────────────────────┘
+└──────────────────────────────────────────────────┘
 ```
 
 **Design Principles:** Single Responsibility · High Cohesion · Open/Closed · Dependency Inversion
@@ -301,6 +301,11 @@ MIT License — free to use, modify, and distribute.
 <div align="center">
 
 Built with 🛡️ for the security community  
+
 **SentinelCore** — Observe everything. Trust nothing.
+
+<br>
+
+**A CyberNestSec Security Project**
 
 </div>
